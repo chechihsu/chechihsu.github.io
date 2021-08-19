@@ -1,0 +1,798 @@
+body *{
+    font-family: 'Noto Sans TC','Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: auto;
+}
+
+.main{
+    min-width: 320px;
+    max-width: 650px;
+    margin: auto;
+    position: relative;
+}
+
+.main img{
+    display: block;
+}
+
+.clearfix{
+    clear: both;
+}
+/*********top**********/
+.top {
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+
+.top img{
+    width: 100%;
+}
+
+.logo a{
+    display: block;
+    width: 35%;
+    height: auto;
+    padding-top: 5px;
+    position: absolute;
+    margin-left: calc(100% / 3.1);
+}
+
+/*********top end**********/
+
+
+/*********btn**********/
+.btn_box{
+    background-image: none;
+    margin-bottom: 45px;
+    padding-top: 20px;
+}
+
+.btnApply_box {
+    width: 100%;
+}
+
+.btnApply {
+    width: 90%;
+    padding: 13px;
+    font-size: 1.500rem;
+    display: block;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-family: 'Noto Sans TC';
+    font-weight: 500;
+    margin: 0 5%;
+    border-radius: 3em;
+    clear: both;
+    background: #CC1313;
+    box-sizing: border-box;
+    text-decoration: none;
+    box-shadow: 0 0px 0 #9A0808;
+    letter-spacing: .1rem;
+}
+
+.btnApply:nth-child(2) {
+    margin: 8% 5% 0 5%;
+}
+
+.btnApply:active {
+    text-decoration: none;
+    background: #CC1313;
+    box-shadow: none;
+    position: relative;
+    top: 5px;
+}
+
+.btnApply_box span {
+    font-family: 'Noto Sans TC';
+    display: block;
+    font-size: 0.875rem;
+    padding: 7px 0;
+    font-weight: 400;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #707070;
+    letter-spacing: .02rem;
+}
+
+.btnOther {
+    width: 90%;
+    padding: 2% 2% 2%;
+    font-size: 24px;
+    line-height: 33px;
+    display: block;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-family: "Microsoft JhengHei";
+    font-weight: bold;
+    margin: 0 5%;
+    border-radius: 3em;
+    clear: both;
+    background: #bf0000;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.btnOther span {
+    display: block;
+    font-size: 15px;
+    line-height: 22px;
+    font-family: "Microsoft JhengHei";
+}
+
+.sp_txt{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: 'Noto Sans TC';
+    font-weight: 500;
+    color: #92051a;
+    line-height: 16px;
+}
+/*********btn end**********/
+
+/*********discount**********/
+.discount{
+    background-color: #ccb88e;
+    background-image: none;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.discount:before{
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 100%;
+    border-top: 20px solid transparent;
+    border-left: 50vw solid transparent;
+    border-right: 50vw solid #ccb88e;
+    border-bottom: 20px solid #ccb88e;
+    z-index: 1;
+}
+
+.player1{
+    position: absolute;
+    top: 80px;
+    z-index: 2;
+    width: 60%;
+    margin-left: calc(100% / 10);
+}
+
+.player1 img{
+    width: 100%;
+}
+
+.discount h2{
+    font-size: 1.6rem;
+    padding-top: 30px;
+    display: block;
+    z-index: 1;
+    position: relative;
+    margin-bottom: 160px;
+    margin-left: 30px;
+}
+
+.discount h2:before{
+    content: '';
+    display: block;
+    position: absolute;
+    border-color: #92051a transparent transparent transparent;
+    border-style: solid solid solid solid;
+    /* 設定邊框大小可拼湊出任意形狀的三角形 */
+    border-width: 40px 40px 0px 0px;
+    /* 設定 width、height 可更好理解原理 */
+    height: 0px;
+    width: 0px;
+    z-index: -1;
+    top:20px;
+    left: -10px;
+}
+
+.special_list{
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    padding: 50px 0 25px 0;
+    margin: auto;
+    margin-bottom: 40px;
+
+}
+
+.special_list ol{
+    width: 90%;
+}
+
+.special_list h5{
+    background-color: #000000;
+    font-size: 1.438rem;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    padding: 10px;
+    position: absolute;
+    top: -20px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    z-index: 1;
+    transform:  skew(-15deg);
+    letter-spacing: 0.125em;
+}
+
+.list{
+    background-color:#92051a;
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.list span{
+    background-color: #000;
+    color: #fff;
+    font-size: 0.875rem;
+    width: 180px;
+    display: block;
+    padding: 6px;
+    letter-spacing: 0.063rem;
+    font-weight: 400;
+}
+
+.list p{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    padding: 15px;
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+/** original
+.list p{
+display: flex;
+align-items:center;
+justify-content:center;
+padding: 15px;
+font-size: 2.500rem;
+color: #fff;
+font-weight: 900;
+}
+
+**/
+
+
+/*********discount end**********/
+
+/*********discount2**********/
+.discount2{
+    background-color: #92051a;
+    background-image: none;
+    position: relative;
+    z-index: 3;
+    padding-top: 0px;
+    padding-bottom: 30px;
+}
+
+.discount2:before{
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    /**
+    top: -2.8677%;**/
+    top: -6.39999%;
+    border-top: 20px solid transparent;
+    border-left: 50vw solid #92051a;
+    border-right: 50vw solid transparent;
+    border-bottom: 20px solid #92051a;
+}
+
+
+.player2{
+    position: absolute;
+    top: 80px;
+    z-index: 2;
+    width: 60%;
+    margin-left: calc(100% / 5);
+}
+
+.player2 img{
+    width: 100%;
+}
+
+.discount2 h2{
+    font-size: 1.6rem;
+    padding-top: 30px;
+    display: block;
+    z-index: 1;
+    position: relative;
+    margin-left: 30px;
+    margin-bottom: 160px;
+    color: #fff;
+}
+
+.discount2 h2:after{
+    content: '';
+    display: block;
+    position: absolute;
+    border-color: #161418 transparent transparent transparent;
+    border-style: solid solid solid solid;
+    /* 設定邊框大小可拼湊出任意形狀的三角形 */
+    border-width: 40px 40px 0px 0px;
+    /* 設定 width、height 可更好理解原理 */
+    height: 0px;
+    width: 0px;
+    z-index: -1;
+    top:20px;
+    left: -10px;
+}
+
+.discount2 .special_list{
+    padding: 25px 0 25px 0;
+}
+
+/*********discount2 end**********/
+
+
+/*********discount4**********/
+.discount4{
+    background-color: #1e1a3b;
+    background-image: none;
+    position: relative;
+    padding-bottom: 10px;
+    z-index: 3;
+}
+
+.discount4:before{
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 100%;
+    border-top: 20px solid transparent;
+    border-left: 50vw solid transparent;
+    border-right: 50vw solid #1e1a3b;
+    border-bottom: 20px solid #1e1a3b;
+    z-index: 3;
+}
+
+.discount4 h2{
+    font-size: 1.6rem;
+    padding-top: 30px;
+    display: block;
+    z-index: 1;
+    position: relative;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+    line-height: 2.188rem;
+}
+
+.box, .logo_box {
+    background: #fff;
+    /* border: 4px solid #e76c26; */
+    border-radius: 20px 0 20px 0;
+    margin: 0 auto 20px;
+    padding: 20px;
+    width: 90%;
+}
+
+.box img{
+    width: 100%;
+    margin: auto;
+    border: 1px solid #eeeeee;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.monkeys_area{
+    width: 100%;
+    margin: auto;
+}
+
+.logo_box img{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.talk_box {
+    position: relative;
+    background: #92051a;
+    border-radius: .4em;
+    width: 100%;
+    padding: 20px;
+}
+
+.talk_box:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 13px solid transparent;
+    border-top-color: #92051a;
+    border-bottom: 0;
+    border-right: 0;
+    margin-left: -100px;
+    margin-bottom: -13px;
+}
+
+.talk_box p{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+.box h3{
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5rem;
+    border-bottom: 3px solid #1e1a3b;
+    color: #1e1a3b;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.reward {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom: 10px;
+    flex-direction:column;
+}
+
+.reward_list {
+    width: 100%;
+    position: relative;
+    margin-bottom: 60px;
+    background-color: #1e1a3b;
+}
+
+.reward_list:after{
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: url(https://image.card.tw.r10s.com/images/common/landing/ad20/icon.svg);
+    background-repeat: no-repeat;
+    width: 38px;
+    height: 38px;
+    bottom: -49px;
+    left: calc(100% / 2.3);
+    z-index: 6;
+}
+
+.reward_box{
+    padding: 10px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.reward_list h5 {
+    background-color: #92051a;
+    color: #fff;
+    display: block;
+    font-size: 1.25rem;
+    font-family: 'Noto Sans TC';
+    font-weight: 500;
+    padding: 10px 10px;
+    letter-spacing: 0.063rem;
+    text-align: center;
+}
+
+.pct{
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 2.6rem;
+    color: #fff;
+    text-align: center;
+    float: left;
+}
+
+
+small {
+    font-size: 3.125rem;
+    font-family: 'Roboto';
+}
+
+.point{
+    font-family: 'Noto Sans TC';
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 400;
+    float: left;
+}
+
+.discount4_more{
+    background-color: #000;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 15px 8px 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    font-size: 0.875rem;
+    width: 120px;
+    margin:10px 0 auto;
+}
+
+/*********discount4 end**********/
+
+
+
+/*********discount3**********/
+
+.discount3{
+    background-color: #dedede;
+    background-image: none;
+    position: relative;
+    padding-bottom: 10px;
+    z-index: 5
+}
+
+.discount3 h2{
+    font-size: 1.6rem;
+    padding-top: 30px;
+    display: block;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.ichiba{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.ichiba img{
+    width: 100%
+}
+
+
+.line {
+    width: 90%;
+    height: 1px;
+    border-top: 1px solid #8b8b8b;
+    position: relative;
+    margin: auto;
+    margin-bottom: 55px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.line:after{
+    content: '';
+    display: block;
+    position: absolute;
+    border-color: #8b8b8b transparent transparent transparent;
+    border-style: solid solid solid solid;
+    /* 設定邊框大小可拼湊出任意形狀的三角形 */
+    border-width: 43px 80px 0 80px;
+    /* 設定 width、height 可更好理解原理 */
+    height: 0px;
+    width: 0px;
+    z-index: 1;
+    top: 0;
+}
+
+.amount {
+    font-family: 'Roboto';
+    text-align: center;
+    font-weight: 900;
+    font-size: 3rem;
+    color: #92051a;
+}
+
+.amount span {
+    font-family: 'Noto Sans TC';
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+
+.more{
+    background-color: #000;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px 10px 20px;
+    font-weight: 400;
+    letter-spacing: 0.125em;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    font-size: 1rem;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.ichiba_btn{
+    margin-bottom: 20px;
+}
+
+/*********discount3 end**********/
+
+
+/*********footer**********/
+.footer{
+    background-image: none;
+    background-color: #92051a;
+    color: #ffffff;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    padding: 4% 2%;
+    padding-bottom: 80px;
+}
+
+.footer .note{
+    font-size:2em;
+    font-weight: 500;
+    letter-spacing: 3px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom: 10px;
+}
+
+.footer p{
+    font-size: 0.75em;
+    line-height: 16px;
+    text-align: center;
+    padding: 0 2%;
+}
+/*********footer end**********/
+
+/*********apply-box**********/
+.btn-fixed {
+    opacity: 0;
+    background-color: #CC1313;
+    width: 95%;
+    position: fixed;
+    bottom: 15px;
+    left: 50%;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    line-height: 45px;
+    border-radius: 30px;
+    text-decoration: none;
+    z-index: 10;
+    letter-spacing: 0.1rem
+}
+/*********apply-box end**********/
+
+/*********other**********/
+.coming p{
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    line-height: 2.5rem;
+    margin: 15% 0;
+}
+
+.coming span{
+    display: inline-block;
+    font-size: 1rem;
+    font-family: 'Noto Sans TC';
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+.last{
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+.last:after{
+    background-image: none;
+}
+
+/*********other end**********/
+
+/*********pop up**********/
+
+.lity-close{
+    background-color: #92051a;
+}
+
+.event_area{
+    background-color: #fff;
+    margin: auto;
+    padding: 3%;
+    padding-top: 35px;
+    width: 90%;
+    overflow: auto;
+}
+
+.event_box {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.title{
+    font-size: 1.625rem;
+    margin-bottom: 25px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 0.125em;
+    text-align: center;
+    background-color: #92051a;
+    padding: 10px;
+}
+
+h3{
+    font-size: 1.375rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+h6{
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #92051a;
+    letter-spacing: 0.063rem;
+    margin-bottom: 10px;
+}
+
+.event_box p{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+    line-height: 20px;
+    letter-spacing: 0.063rem;
+}
+
+.event_box a{
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    font-size: 0.875rem;
+    padding: 5px;
+    letter-spacing: 0.063rem;
+    display: inline-block;
+    margin-top: 0.625rem;
+}
+
+.red {
+    color: #92051a;
+}
+
+.event_box ol{
+    padding-left: 1rem;
+}
+
+.event_box li{
+    list-style: decimal;
+    margin-bottom: 1.250rem;
+    letter-spacing: 0.063rem;
+    line-height: 1.250rem;
+}
+
+/*********pop up end**********/
