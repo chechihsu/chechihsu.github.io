@@ -1,0 +1,400 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans:600,300,400);
+
+.font-coustom {
+font-family: 'Open Sans', sans-serif,Microsoft JhengHei ;
+
+}
+
+body a:hover{
+    color: #01a1ff;
+	text-decoration: none;
+    -moz-transition: 0.3s color linear;
+    -webkit-transition: 0.3s color linear;
+    transition: 0.3s color linear;	
+
+}
+
+@media screen and (max-width: 450px){
+.logo_f {
+	display: none;
+}
+	
+#about .title_f {
+	font-size: 3.2em;
+}
+
+#had .about_position {
+    padding: 3.375em 0 3.125em 0;
+}
+	
+}
+
+.kbg { background: url(../images/index/about_bg.jpg) bottom center/cover ;
+    min-height: 85vh;
+    
+}
+
+.intro-lg {
+  text-align: center;
+  padding-top: 15vh;
+  padding-bottom: 15vh;	
+}
+
+.title_f {
+    font-weight: 500;  
+	font-size: 5em;
+	color: #FFF;
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.6);
+	line-height: 2.1em;
+	letter-spacing: 0.05rem;
+    
+}
+
+.about_position {
+    padding: 9.375em 0 3.125em 0;
+}
+
+.titel_sub {
+    font-weight: 300;
+	font-size: 24px;
+	color: #FFF;
+	letter-spacing: 0.01em;
+	text-shadow:0px 1px 1px rgba(0,0,0,0.6);
+    letter-spacing: 0.2rem;
+    
+}
+
+.btn-custom {
+    color: #FFF;
+	text-align: center;
+    border-radius: 3px;
+	border: 1px solid #FFF;
+	font-size: 17px;
+    padding: 1.125em 5.5em;
+	margin-top: 4.5em;
+	display: inline-block;
+}
+
+header #about a:hover { 
+    color: #171718;
+    background-color: #FFF;
+	-moz-transition: 0.3s background-color linear;
+	-webkit-transition: 0.3s background-color linear;
+	transition: 0.3s background-color linear;
+    
+}
+
+#nav{ 
+padding: -100px;
+
+
+}
+
+.logo {
+	display: block;
+	height: 2.95em;
+	background-image: url(../images/index/2015_portfolio_03.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	line-height: 1.475em;
+	padding-left: 4.6875em;
+	font-size: 1em;
+	font-weight: 300;
+    letter-spacing: 0.05em;
+	float: left;
+	text-shadow:0px 1px 1px rgba(0,0,0,0.6);
+}
+
+/*----------------coust nev----------------*/
+
+#custom-bootstrap-menu.navbar-default .navbar-brand {
+    color: #FFF;
+}
+#custom-bootstrap-menu.navbar-default {
+	min-width: 320px;
+    font-size: 20px;
+    background-color: rgba(248, 248, 248, 0);
+    border-width: 0px;
+    border-radius: 0px;
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(248, 248, 248, 0);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
+    color: rgba(1, 161, 255, 1);
+    background-color: rgba(255, 255, 255, 0);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(231, 231, 231, 0);
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle {
+    border-color: #171718;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
+    background-color: #fff;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+    background-color: #171718;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #171718;
+}
+
+
+
+/*----------------coust nev end----------------*/
+
+#custom-bootstrap-menu a:hover{ 
+
+	color: #01a1ff;
+    -moz-transition: 0.3s color linear;
+    -webkit-transition: 0.3s color linear;
+    transition: 0.3s color linear;	
+}
+
+#custom-bootstrap-menu li {
+	font-size: 20px;
+    font-weight: 300;
+	line-height: 1.475em;
+	text-shadow:0px 1px 1px rgba(0,0,0,0.6);
+}
+
+
+
+.work-title {
+	font-weight: 500;
+	font-size: 2.2em;
+	color: #171718;
+	line-height: 2.1em;
+	letter-spacing: -0.1rem;
+    text-transform: uppercase;
+}
+
+#works-btn a:hover{
+    color: #FFF;
+    background-color: #171718;
+	-moz-transition: 0.3s background-color linear;
+	-webkit-transition: 0.3s background-color linear;
+	transition: 0.3s background-color linear;
+
+}
+
+
+.box_a {
+ display: block;
+}
+
+.box_title {
+	color: #171718;
+
+}
+
+.box-ifo {
+ font-weight: 300;
+ text-align: center;
+ font-size: 18px;
+ color: #9b9b9b;
+ padding-top:5px;  
+}
+
+.box-ifo_tag {
+color: #9b9b9b;
+}
+
+.box_txt {
+	font-weight: 600;
+    padding-top:1em;
+    text-align: center;
+    font-size: 1.375em;
+    line-height: 0.06em;
+}
+
+.box-custom {
+	margin-bottom: 2em;
+}
+
+.kbg-2 {
+	background: url(../images/index/2015_portfolio_22.jpg) top center/cover ;
+    min-height: auto;
+    
+}
+
+.intro-lg-2 {
+  text-align: center;
+  padding-top: 14.5vh;
+  padding-bottom: 14.5vh;
+}
+
+#blog-btn a:hover {
+    color: #171718;
+    background-color: #FFF;
+	-moz-transition: 0.3s background-color linear;
+	-webkit-transition: 0.3s background-color linear;
+	transition: 0.3s background-color linear;
+    
+
+
+}
+.footer_ifo {
+    font-size: 14px;
+    line-height: 7.5em;
+}
+
+.footer_a {
+	color: #171718;
+    text-decoration: underline;
+}
+
+.up-custom { 
+	background-color: #171718;
+	width: 100%;
+	
+}
+
+.up-btn { 
+    display: block;
+    width: 100%;
+    padding:1.96875em;
+}
+
+.img-position {
+    margin: auto;
+}
+
+.con-padding {
+	padding: 0px;
+}
+
+.nav-top {
+	padding: 1.875em 1.875em 0 1.875em ;
+}
+
+.title2_f {
+	font-weight: 500;
+	font-size: 2.2em;
+	line-height: 2.1em;
+	letter-spacing: -0.1rem;
+    text-transform: uppercase;
+	color: #fff;
+}
+
+.button-style-b {
+	color: #ffffff;
+	text-align: center;
+    border-radius: 3px;
+	border: 1px solid #ffffff;
+	font-size: 17px;
+	padding: 1.125em 5.5em;
+	margin: 3.5em auto;
+	display: inline-block;
+}
+
+
+
+
+.img-custom {
+	width: 100%;
+}
+
+.btn-position {
+	margin-top: 0.7em;
+}
+
+.link-position {
+	padding-top: 0.3125em;
+}
+
+.kbg2 {
+ background: url(../images/about/about_bg2.jpg) center/cover ;
+ min-height: 85vh;
+    
+
+}
+
+
+
+.where_work {
+	width: 100%;
+    font-weight: 600;
+    padding-top:28px;
+    font-size: 22px;
+    line-height: 32px;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+    border-bottom: 1px;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+}
+
+.work_list {
+line-height: 1.5em;
+}
+
+.link-txt {
+    color: #171718;
+}
+
+
+
+.me-width {
+    width: 190px; 
+	margin: 0 auto;
+}
+
+.img-border {
+-moz-box-shadow: 0px -1px 7px #2e2e2e;
+-webkit-box-shadow: 0px -1px 7px #2e2e2e;
+box-shadow: 0px -1px 7px #2e2e2e;
+margin-bottom: 0.3125em;
+}
+
+
+
+.menu-custom {
+	width: 100%;
+	padding-left: 45px;
+	margin: 0;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #DFDFDF;
+}
+
+.menu-li-custom { 
+	font-weight: 400;
+	margin-right: 0.3125em;
+}
+
+.img-mar {
+	margin-bottom: 0.5em;
+}
+
+.web-vist {
+	color:#171718;
+	display: inline-block;
+}
+
+
+
+.page-custom {
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin: auto;
+}
+
+.page-position {
+margin-top: 2em;
+}
+
+
+.p_txt {
+    letter-spacing: 0.1rem;
+    line-height: 2em;
+}
