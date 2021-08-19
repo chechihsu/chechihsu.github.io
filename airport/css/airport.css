@@ -1,0 +1,1263 @@
+/* Reset CSS --------------------------------------- */
+body, div, ul, ol, li, h1, h2, h3, h4, h5, h6, form, input, button,textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+img {border: 0;}
+:focus {outline: 0;}
+h1, h2, h3, h4, h5, h6 {font-size: 100%;font-weight: normal;}
+input, button, textarea,select, optgroup, option {
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+}
+code, kbd, samp, tt {font-size: 100%;}
+
+/*purpose To enable resizing for IE */
+/*branch For IE6-Win, IE7-Win */
+input, button, textarea, select {*font-size: 100%;}
+body {line-height: 180%;}
+ol, ul, li {list-style: none;}
+:link, :visited , ins {text-decoration: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}
+
+/*HTML5 tag*/
+section, article, aside, footer, header, nav, main {
+    display:block;
+}
+
+/* Reset CSS ---------------end------------------------ */
+
+
+
+/*固定項目*/
+
+body *{
+    font-family: Arial,"微軟正黑體",Microsoft JhengHei,sans-serif,monospace;
+    box-sizing: border-box;
+}
+
+#pageloader {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #FFF;
+    z-index: 999999;
+}
+
+.loader {
+    position: absolute;
+    width: auto;
+    height: auto;
+    margin: -56px 0 0 -150px;
+    ;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
+
+.myheader {
+    z-index: 99;
+    position: absolute;
+    width: 100%;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 1px 1px 0 rgba(117, 117, 117, 0.2);
+}
+
+.myfooter {
+    z-index: 99;
+    position: absolute;
+    width: 100%;
+    background: rgba(255, 255, 255, 1);
+}
+
+.navigation {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.application {
+    padding: 2px 20px;
+    font-size: 12px;
+    display: block;
+    right: 0px;
+    top: 10px;
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    clear: both;
+    background: #CC1313;
+    box-sizing: border-box;
+}
+
+.application:hover{
+    color: #fff;
+    text-decoration: none;
+    background-color: #a20000;
+}
+
+
+#logo {
+    text-align: center;
+    display: block;
+    width: 200px;
+    height: auto;
+    padding: 10px 0;
+}
+
+/*landscape*/
+.portrait_view.landscape_view{display: none;}
+
+.portrait_view.landscape_view.active{display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 300;
+    background: #000;
+    color: #ffffff;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-content{
+    background-color: #000;
+}
+.modal-body{
+    font-size: 1rem;
+}
+
+/*固定項目End*/
+
+/*slide-arrow*/
+.fp-controlArrow {
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+.fp-controlArrow.fp-prev {
+    left: 10%;
+    box-sizing: border-box;
+    height: 20px;
+    width: 20px;
+    border-style: solid;
+    border-color: white;
+    border-width: 0px 3px 3px 0px;
+    transform: rotate(135deg);
+}
+.fp-controlArrow.fp-next {
+    right: 10%;
+    box-sizing: border-box;
+    height: 20px;
+    width: 20px;
+    border-style: solid;
+    border-color: white;
+    border-width: 0px 3px 3px 0px;
+    transform: rotate(-45deg);
+}
+
+/*slide-arrow-end*/
+
+#section1,
+#section2,
+#section3,
+#section4,
+#section5,
+#section6,
+#slide1,
+#slide2,
+{
+    background-position: center bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    /*overflow: hidden;*/
+}
+
+#section1 {
+    background-image: url(https://image.card.tw.r10s.com/images/common/landing/ad12/s0bg.jpg);
+}
+
+#section2 {
+    background-image: url(https://image.card.tw.r10s.com/images/common/landing/ad12/s1bg.jpg);
+}
+
+#section3 {
+    background-image: url(https://image.card.tw.r10s.com/images/common/landing/ad12/s2bg.jpg);
+}
+
+#section4 {
+    background-image: url(https://image.card.tw.r10s.com/images/common/landing/ad12/s3bg.jpg);
+}
+
+/*Adding background for the slides
+#section5
+* --------------------------------------- */
+#slide1{
+    background-image: url(https://image.card.tw.r10s.com/images/common/landing/ad12/s4-1bg.jpg);
+    padding: 0;
+}
+#slide2{
+    background-image: url(https://image.card.tw.r10s.com/images/common/landing/ad12/s4-2bg.jpg);
+    padding: 0;
+}
+#slide3{
+    background-image: url(https://image.card.tw.r10s.com/images/common/landing/ad12/s4-3bg.jpg);
+    padding: 0;
+}
+#slide4{
+    background-image: url(https://image.card.tw.r10s.com/images/common/landing/ad12/s4-4bg.jpg);
+    padding: 0;
+}
+
+#section6 {
+    background-image: url(https://image.card.tw.r10s.com/images/common/landing/ad12/s5bg.jpg);
+}
+
+
+
+/*fullpage setting*/
+
+#fp-nav ul li .fp-tooltip {
+    position: absolute;
+    top: -5px;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    background: #000000;
+    font-family: arial, helvetica, sans-serif;
+    white-space: nowrap;
+    width: 0;
+    max-width: 220px;
+    overflow: hidden;
+    display: block;
+    opacity: 0;
+    text-align: right;
+}
+
+#fp-nav ul li,
+.fp-slidesNav ul li {
+    display: block;
+    width: 0px;
+    height: 14px;
+    margin: 10px 0px;
+    position: relative;
+}
+
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span {
+    height: 13px;
+    width: 13px;
+    margin: -3px 0 0 -4px;
+    border-radius: 100%;
+    background: #be0000;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    height: 8px;
+    width: 8px;
+    border: 0;
+    background: #ffffff;
+    left: 50%;
+    top: 50%;
+    margin: -2px 0 0 -2px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+/*-- lity--*/
+
+.lity-close,
+.lity-close:active,
+.lity-close:focus,
+.lity-close:hover,
+.lity-close:visited {
+    color: #ffffff;
+    font-size: 40px;
+    text-shadow:none;
+
+}
+
+.lity-close {
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .5);
+    background-color: #816f58;
+}
+
+/*-- lity end--*/
+
+/*-- TOKYO--*/
+
+.airport,.o_airport,.hok_airport,.oka_airport,.na_airport,.kyu_airport{
+    color: #ffffff;
+    padding-top: 8%;
+}
+
+.air_location,.o_air_location,.na_air_location,.kyu_air_location{
+    font-size: 6rem;
+    text-align: justify;
+    text-justify: inter-ideograph;
+    border-bottom: #ffffff 1px solid;
+    line-height: 2.5rem;
+    font-weight: bolder;
+    padding-top: 1rem;
+}
+
+.air_location::after,.o_air_location::after,.hok_air_location::after,.oka_air_location::after,.na_air_location::after,.kyu_air_location::after{
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+
+.airport p,.o_airport p,.na_airport p,.kyu_airport p{
+    text-align: justify;
+    text-justify: inter-ideograph;
+    padding-top: 2.5rem;
+    font-size: 2.5rem;
+    line-height: 2rem;
+}
+
+.airport p::after,.o_airport p::after,.na_airport p::after,.kyu_airport p::after{
+    content: "";
+    display: inline-block;
+    width: 100%;
+
+}
+
+.ap_info,.o_ap_info,.o_ap_info_2,.hok_ap_info_2,.oka_ap_info_2,.na_ap_info_2,.kyu_ap_info_2{
+    background-color: rgba(0%,0%,0%,0.7);
+    color: #ffffff;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.vip_name,.o_vip_name,.o_vip_name_2,.hok_vip_name,.oka_vip_name,.na_vip_name,.kyu_vip_name{
+    background-color: #816f58;
+    display: inline-block;
+    width: 100%;
+    font-size: 2rem;
+    padding: 1rem 1rem;
+    letter-spacing: 0.1rem;
+}
+
+.ap_info>p,.o_ap_info>p,.kyu_ap_info{
+    font-size: 1.6rem;
+    padding: 1rem 1rem;
+    letter-spacing: 0.4rem;
+    line-height: 2.5rem;
+}
+
+.ap_info>p span,.o_ap_info>p span{
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.ap_info_btn,.o_ap_info_btn_1,.o_ap_info_btn_2,.hok_ap_info_btn,.oka_ap_info_btn,.na_ap_info_btn,.kyu_ap_info_btn{
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    border: #ffffff 1px solid;
+}
+
+/*-----all page mouse hover-------*/
+.ap_info_btn:focus ,.o_ap_info_btn_1:focus,.o_ap_info_btn_2:focus,.hok_ap_info_btn:focus,.oka_ap_info_btn:focus,.na_ap_info_btn:focus,.kyu_ap_info_btn:focus,.event_info_btn:focus{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.ap_info_btn:hover, .o_ap_info_btn_1:hover,.o_ap_info_btn_2:hover,.hok_ap_info_btn:hover,.oka_ap_info_btn:hover,.na_ap_info_btn:hover,.kyu_ap_info_btn:hover,.event_info_btn:hover{
+    color: #000000;
+    background-color: #ffffff;
+    text-decoration: none;
+    transition: background .2s linear;
+}
+/*-----all page mouse hover end-------*/
+
+
+
+/*----- TOKYO -end-------*/
+
+
+/*-- OSAKA--*/
+
+.o_airport{
+    padding-top: 12%;
+}
+
+.o_ap_info{
+    margin-bottom: 1rem;
+}
+
+.o_ap_info_2{
+    margin-bottom: 1rem;
+}
+
+.o_ap_info_btn_1{
+    margin-bottom: 2rem;
+}
+
+.o_ap_info_1{
+    padding: 1.5rem;
+    letter-spacing: 0.08rem;
+}
+
+.o_ap_info_name,.hok_ap_info_name,.na_ap_info_name{
+    font-size: 1.8rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    border-bottom: #ffffff 1px solid;
+    padding-bottom: 0.8rem;
+    letter-spacing: 0.4rem;
+}
+
+.o_ap_info_1 span,.hok_ap_info span,.oka_ap_info span,.na_ap_info span,.kyu_ap_info span{
+    font-weight: bolder;
+    font-size: 1.8rem;
+}
+
+.infopopup {
+    background: #ffffff;
+    padding: 20px;
+    margin: auto;
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    line-height: 2.5rem;
+}
+
+.o_special{
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+}
+
+#o_vip_time{
+    margin: 0;
+    padding: 0;
+}
+
+/*-- OSAKA -end--*/
+
+/*-- hokkaido--*/
+
+.hok_airport{
+    padding-top: 18%;
+}
+
+.hok_air_location,.oka_air_location{
+    font-size: 6rem;
+    text-align: justify;
+    text-justify: inter-ideograph;
+    font-weight: bolder;
+    padding-top: 1rem;
+}
+
+.hok_ap_info_2{
+    margin-bottom: 1rem;
+}
+
+.hok_vip_name{
+    font-size: 2.2rem;
+    letter-spacing: 0.1rem;
+    font-weight: bolder;
+    letter-spacing: 0.5rem;
+}
+
+.hok_ap_info_btn{
+    margin-bottom: 4vh;
+}
+
+.hok_ap_info,.oka_ap_info,.na_ap_info{
+    padding: 1.5rem;
+    letter-spacing: 0.5rem;
+    font-size: 1.6rem;
+}
+
+.hok_ap_info_name{
+    font-weight:normal;
+}
+
+/*-- hokkaido end--*/
+
+/*--okayama--*/
+
+.oka_airport{
+    padding-top:5%;
+}
+
+.oka_ap_info_2{
+    margin-bottom: 2vh;
+}
+
+.oka_ap_info{
+    letter-spacing: 0.2rem;
+    line-height: 2.5rem;
+}
+/*-- okayama end--*/
+
+
+/*-- nagoya--*/
+
+.na_airport{
+    padding-top: 14%;
+}
+
+.na_ap_info_2{
+    margin-bottom: 1rem;
+}
+
+.na_ap_info_btn{
+    margin-bottom: 4vh;
+}
+
+.na_ap_info_name{
+    font-weight: normal;
+}
+
+/*--nagoya end--*/
+
+
+/*--kyushu&tohoku--*/
+
+.kyu_airport{
+    padding-top: 3%;
+}
+
+.kyu_ap_info_2{
+    margin-bottom: 2vh;
+}
+
+/*--kyushu&tohoku end--*/
+
+/*--legal--*/
+.step_b{
+    padding-top: 20vh;
+    margin-bottom: 3vh;
+    margin-left: 5.2%;
+}
+
+.step_b .pic{
+    width: 100%;
+    display: block;
+    padding-right: 30px;
+}
+
+
+.step_b .sp-pic{
+    width: 100%;
+    display: none;
+}
+
+
+.event_info_btn{
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    font-size: 1.4rem;
+    padding: 0.5rem 0;
+    background-color: #816f58;
+    margin-bottom: 10vh;
+}
+
+.infopopup2{
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    background-color: #ffffff;
+    overflow-y:scroll;
+}
+
+.eventRule_tit{
+    background-color: #816f58;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 1vh 0;
+    color: #ffffff;
+    letter-spacing: 0.2rem;
+    font-weight: bolder;
+    margin-bottom: 1vh;
+}
+
+.eventRule dt{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    display: block;
+    line-height: 2.5rem;
+    letter-spacing: 0.1rem;
+    color: #816f58;
+    padding-left: 1rem;
+}
+
+.eventRule dd{
+    font-size: 1rem;
+    margin: -2.5em 0 0 12em;
+    line-height: 2.5rem;
+    letter-spacing: 0.2rem;
+    word-wrap:break-word;
+    padding-left: 0.8vw;
+}
+
+.eventRule dd ul li{
+    list-style: none;
+}
+
+.eventRule dd ol{
+    padding-left: 1.8rem;
+}
+
+.eventRule dd ol li{
+    list-style: decimal;
+}
+
+.legal{
+    color: #ffffff;
+    display: block;
+    bottom: 10%;
+}
+
+.legal_tit {
+    font-size: 5rem;
+    text-align: center;
+    letter-spacing: 1.6rem;
+    font-weight:bolder;
+    padding: 5px 0px;
+    margin-bottom: 20px;
+
+}
+
+.legaltext {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 0.2rem;
+    line-height: 1.8rem
+}
+
+.legaltext a{
+    color: #ffffff;
+    text-decoration:underline;
+}
+
+/*--legal end--*/
+
+
+@media only screen and (min-width: 768) {
+
+    .fp-section {
+        height: auto !important;
+    }
+}
+
+
+/*------------------------------------------
+Responsive Grid Media Queries - 1280, 1024, 768, 480
+1280-1024   - desktop (default grid)
+1024-768    - tablet landscape
+768-480     - tablet
+480-less    - phone landscape & smaller
+--------------------------------------------*/
+
+
+/* Large screens ----------- */
+
+@media all and (min-width: 1500px) and (max-width: 1800px) {
+    .container {
+        width: 1200px;
+    }
+}
+
+
+@media all and (min-width: 1024px) and (max-width: 1499px) {
+    .container {
+        width: 1000px;
+    }
+
+
+    .navigation {
+        padding: 0px 0px;
+    }
+
+
+    #section1 {
+        background-position: 90%;
+        background-attachment: scroll;
+    }
+
+    #section2 {
+        background-position: 0 center;
+        background-attachment: scroll;
+    }
+
+    #section3 {
+        background-position: 0 center;
+        background-attachment: scroll;
+    }
+
+    #section4 {
+        background-position: 75% center;
+        background-attachment: scroll;
+    }
+
+    #slide1 {
+        background-position: 50% center;
+        background-attachment: scroll;
+    }
+
+    #slide2 {
+        background-position: 0 center;
+        background-attachment: scroll;
+    }
+
+    #slide3 {
+        background-position: 0 center;
+        background-attachment: scroll;
+    }
+
+    #slide4 {
+        background-position: 0 center;
+        background-attachment: scroll;
+    }
+
+    #section6 {
+        background-position: 40% top;
+        background-attachment: scroll;
+    }
+
+
+
+    /*-- custom--*/
+    .air_location{
+        font-size: 5rem;
+    }
+
+
+    .oka_air_location{
+        font-size: 5rem;
+    }
+
+    .vip_name{
+        font-size: 1.4rem;
+    }
+
+    .ap_info>p{
+        font-size: 1rem;
+        padding: 1rem 1rem;
+        letter-spacing: 0.1rem;
+        line-height: 2rem;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+
+    .container {
+        width: 750px;
+        margin: 0px auto;
+    }
+
+    #section1 {
+        background-position: 90%;
+        background-attachment: scroll;
+    }
+
+    #section2 {
+        background-position: 0 center;
+        background-attachment: scroll;
+    }
+
+    #section3 {
+        background-position: 0 center;
+        background-attachment: scroll;
+    }
+
+    #section4 {
+        background-position: 40% center;
+        background-attachment: scroll;
+    }
+
+    #slide1 {
+        background-position: 50% center;
+        background-attachment: scroll;
+    }
+
+    #slide2 {
+        background-position: 0 center;
+        background-attachment: scroll;
+    }
+
+    #slide3 {
+        background-position: 0 center;
+        background-attachment: scroll;
+    }
+
+    #slide4 {
+        background-position: 0 center;
+        background-attachment: scroll;
+    }
+
+    #section6 {
+        background-position: 40% top;
+        background-attachment: scroll;
+    }
+
+    .legal .content {
+        top: 0px;
+        background: rgba(255, 255, 255, .8);
+        font-size: 4em;
+    }
+
+    .legal .content .legaltext {
+        font-size: 13px;
+        margin: 10px 0px;
+        text-align: center;
+        font-weight: normal;
+    }
+    .ap_info{
+        margin-bottom: 2rem;
+    }
+
+    .vip_name{
+        font-size: 1.4rem;
+        padding: 0.4rem;
+        line-height: 1.4rem;
+    }
+
+    .ap_info>p{
+        font-size: 1rem;
+        padding: 0.4rem;
+        letter-spacing: 0.1rem;
+        line-height: 2rem;
+    }
+
+    .o_ap_info_2{
+        height: 90vh;
+        overflow-y:scroll;
+    }
+
+    .hok_airport{
+        padding-top: 27%;
+    }
+
+    .hok_air_location{
+        font-size: 4rem;
+    }
+
+    .oka_air_location{
+        font-size: 3rem;
+        padding-top: 27%;
+    }
+
+    .na_air_location{
+        font-size: 4rem;
+    }
+
+    .na_airport{
+        padding-top: 27%;
+    }
+
+    .step_b{
+        padding-top: 20vh;
+        margin-bottom: 3vh;
+        margin-left: 6.2%;
+    }
+
+    .step_b .pic{
+        width: 100%;
+        display: block;
+        padding-right: 30px;
+    }
+
+
+    .step_b .sp-pic{
+        display: none;
+    }
+
+    .legal_tit {
+        font-size: calc(50px - 2vw);
+        margin-bottom: 2vh;
+    }
+
+    .event_info_btn{
+        color: #ffffff;
+        text-align: center;
+        letter-spacing: 0.2rem;
+        font-size: 1.4rem;
+        padding: 0.5rem 0;
+        background-color: #816f58;
+        margin-bottom: 10vh;
+    }
+}
+
+@media all and (max-width: 767px) {
+
+
+    .container {
+        position: relative;
+        width: 100%;
+        padding-left: 0px!important;
+        padding-right: 0px!important;
+    }
+
+
+    /*固定項目*/
+
+    .myheader {
+        position: fixed;
+        top: 0px;
+    }
+
+    .myfooter {
+        position: fixed;
+        bottom: 5px;
+        background: none;
+    }
+
+    .navigation {
+        margin: 0 auto;
+        position: relative;
+        padding: 0px;
+        text-align: center;
+    }
+
+    #logo {
+        width: 40vw;
+        height: auto;
+        text-align: center;
+        margin: auto;
+        padding: 1vh;
+    }
+
+    .application {
+        padding: 6px 23px;
+        font-size: 16px;
+        top: 10px;
+        position: relative;
+    }
+
+    .loader img {
+        width: 80%;
+    }
+
+    .legal .content {
+        font-size: 2em;
+        top: 0px;
+        position: relative;
+    }
+
+    .legal .content .legaltext {
+        font-size: 12px;
+        text-align: left;
+        padding: 20px;
+        margin: 0px;
+    }
+    /*固定項目End*/
+
+    #section1 {
+        background-position: 75%;
+        background-attachment: scroll;
+    }
+
+    #section2 {
+        background-position: 8% center;
+        background-attachment: scroll;
+    }
+
+    #section3 {
+        background-position: 18% center;
+        background-attachment: scroll;
+    }
+
+    #section4 {
+        background-position: 50% center;
+        background-attachment: scroll;
+    }
+
+    #slide1 {
+        background-position: 51% center;
+        background-attachment: scroll;
+    }
+
+    #slide2 {
+        background-position: 10% center;
+        background-attachment: scroll;
+    }
+
+    #slide3 {
+        background-position: 10% center;
+        background-attachment: scroll;
+    }
+
+    #slide4 {
+        background-position: 20% center;
+        background-attachment: scroll;
+    }
+
+    #section6 {
+        background-position: 40% 20%;
+        background-attachment: scroll;
+    }
+
+
+    /*slide-arrow*/
+    .fp-controlArrow {
+        top: 25%;
+    }
+    .fp-controlArrow.fp-prev {
+        left: 3%;
+
+    }
+    .fp-controlArrow.fp-next {
+        right:3%;
+    }
+    /*slide-arrow-end*/
+
+    /*-- custom--*/
+
+    .ap_info {
+        margin-bottom: 1vh;
+    }
+    .airport{
+        padding-top: 0;
+    }
+    .o_ap_info_2{
+        height: 90vh;
+        overflow-y:scroll;
+    }
+    .hok_air_location{
+        font-size: 4rem;
+    }
+    .legal_tit {
+        font-size: calc(40px - 2vw);
+        margin-bottom: 2vh;
+        letter-spacing: 0.5rem;
+    }
+    .event_info_btn{
+        margin-bottom: 2vh;
+    }
+
+    .step_b{
+        padding-top: 10%;
+        margin-bottom: 2vh;
+        margin-left: 13%;
+    }
+
+    .step_b .pic{
+        display: none;
+    }
+
+    .step_b .sp-pic{
+        width: 65%;
+        display: block;
+    }
+
+    .step1 .sp-pic,.step2 .sp-pic{
+        margin-bottom: 2vh;
+    }
+    .event_info_btn{
+        margin-bottom: 3vh;
+    }
+
+}
+
+/*----*/
+@media all and (max-width: 576px) {
+
+    .loader img {
+        width: 70%;
+    }
+
+    #logo {
+        width: 70vw;
+    }
+
+    /*slide-arrow*/
+    .fp-controlArrow {
+        top: 28%;
+    }
+    .fp-controlArrow.fp-prev {
+        left: 4%;
+
+    }
+    .fp-controlArrow.fp-next {
+        right:4%;
+    }
+    /*slide-arrow-end*/
+
+    /*-- custom--*/
+
+    .airport ,.o_airport{
+        padding-top: 5vh;
+    }
+
+    .air_location,.o_air_location,.hok_air_location,.na_air_location,.kyu_air_location{
+        font-size: 5rem;
+        line-height: 1rem;
+        padding-top: 0;
+    }
+
+    .airport p,.o_airport p,.hok_airport p,.oka_airport p,.na_airport p,.kyu_airport p{
+        padding-top: 1rem;
+        font-size: 2rem;
+        line-height: 1.25rem;
+    }
+
+    .vip_name,.o_vip_name,.o_vip_name_2,.na_vip_name,.oka_vip_name,.kyu_vip_name{
+        font-size: 1.2rem;
+    }
+
+    .o_ap_info_btn_1,.o_ap_info_btn_2,.hok_ap_info_btn,.oka_ap_info_btn,.na_ap_info_btn,.kyu_ap_info_btn{
+        font-size: 1rem;
+        letter-spacing: 0;
+        margin-bottom: 1.5vh;
+    }
+
+    .ap_info>p ,.o_ap_info>p,.hok_ap_info>p,.oka_ap_info>p,.kyu_ap_info>p{
+        font-size: 1rem;
+        padding: 0.5rem 0.5rem;
+        letter-spacing: 0;
+        line-height: 2rem;
+    }
+
+
+    /*OSAKA*/
+    .o_special{
+        letter-spacing: 0;
+        font-weight: bolder;
+    }
+
+
+
+    /*hokkaido*/
+
+    .hok_vip_name{
+        font-size: 1.6rem;
+        padding: 0.3vh 0;
+    }
+
+    .hok_ap_info_name{
+        font-size: 1.4rem;
+        letter-spacing: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .hok_ap_info{
+        padding: 0 0.5rem;
+    }
+
+    .hok_ap_info>p{
+        font-size: 1rem;
+        padding: 0.5rem;
+        letter-spacing: 0;
+        line-height: 1.5rem;
+    }
+
+    /*okayama*/
+
+    .oka_air_location{
+        font-size: 4rem;
+        line-height: 1rem;
+        padding-top: 0;
+    }
+
+    /*nagoya*/
+    .na_vip_name{
+        padding: 0.5vh 0;
+    }
+
+    .na_ap_info_name{
+        font-size: 1.4rem;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        letter-spacing: 0;
+    }
+
+    .na_ap_info{
+        padding: 0 4vw;
+    }
+
+    .na_ap_info>p{
+        font-size: 1rem;
+        padding: 0.5rem;
+        letter-spacing: 0;
+        line-height: 1.5rem;
+    }
+
+    /*legal*/
+
+    .step_b{
+        padding-top: 0;
+        margin-bottom: 3vh;
+        margin-left: 0;
+    }
+
+    .step_b .pic{
+        display: none;
+    }
+
+    .step_b .sp-pic{
+        width: 100%;
+        display: block;
+    }
+
+    .step1 .sp-pic,.step2 .sp-pic{
+        margin-bottom: 2vh;
+    }
+
+    .event_info_btn{
+        margin-bottom: 2vh;
+    }
+
+    .eventRule_tit{
+        font-size: 1.8rem;
+    }
+
+    .eventRule dt{
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .eventRule dd{
+        margin: 0 0 0 0;
+        line-height: 2rem;
+        letter-spacing: 0.1rem;
+        padding: 0.6em;
+    }
+
+    .legal_tit{
+        font-size: calc(25px - 2vw);
+        margin-bottom: 1vh;
+        line-height: 3.5rem;
+        letter-spacing: 0.5rem;
+    }
+
+    .legaltext {
+        line-height: 1.4rem;
+        letter-spacing: 0.1rem;
+    }
+
+}
